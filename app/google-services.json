@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "125813165670",
+    "firebase_url": "https://todolist-a2755.firebaseio.com",
+    "project_id": "todolist-a2755",
+    "storage_bucket": "todolist-a2755.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125813165670:android:fbd04da3f5107e04",
+        "android_client_info": {
+          "package_name": "com.example.bavly.todolist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125813165670-acv3unl7hatte1oo59voqvnfc0s5numl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGkBiftq-UEr-wlnLs9L1D_oAkkwakBUc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125813165670:android:0e9ac9346f1b7506",
+        "android_client_info": {
+          "package_name": "com.example.bavly.todolistnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125813165670-acv3unl7hatte1oo59voqvnfc0s5numl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGkBiftq-UEr-wlnLs9L1D_oAkkwakBUc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
