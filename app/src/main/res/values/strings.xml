@@ -20,4 +20,7 @@
     </style>
 
     <string name="title_activity_sign_up">signUp</string>
+    <string name="title_activity_profile">profile</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main2">profileactivity</string>
 </resources>

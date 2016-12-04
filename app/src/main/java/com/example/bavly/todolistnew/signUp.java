@@ -96,7 +96,7 @@ public class signUp extends Activity {
 
                         progressDialog.dismiss();
                         if (task.isSuccessful()) {
-                            startActivity(new Intent( getApplicationContext() ,ProfileActivity.class));
+                            startActivity(new Intent( getApplicationContext() ,Main2Activity.class));
 
                         }else {
                             Toast.makeText(signUp.this, "The email or The password is wrong ", Toast.LENGTH_SHORT).show();
