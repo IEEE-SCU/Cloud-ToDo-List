@@ -45,15 +45,24 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
 
     }
+    public void delete(int position){
+
+        data.remove(position);
+        notifyItemRemoved(position);
+    }
+    public void addItem(String country) {
+
+    }
 
     @Override
     public int getItemCount() {
 
 
-        return 0;
+        return data.size();
     }
 
-    class viewholder extends RecyclerView.ViewHolder{
+
+    class viewholder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         TextView date;
         TextView title;
@@ -64,8 +73,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             date = (TextView)itemView.findViewById(R.id.Tdate);
             title = (TextView)itemView.findViewById(R.id.Ttitle);
             task = (TextView)itemView.findViewById(R.id.Ttask);
+            title.setOnClickListener(this);
 
+        }
 
+        @Override
+        public void onClick(View view) {
+                delete(getPosition());
         }
     }
 }

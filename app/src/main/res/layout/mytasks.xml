@@ -7,10 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -24,11 +21,35 @@
         android:layout_marginBottom="28dp" />
 
     <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date"
+
+        android:inputType="date"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/section_label"
+        android:id="@+id/editdate" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Title"
+        android:ems="10"
+        android:id="@+id/edittitle"
+        android:layout_below="@+id/editdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:id="@+id/TasksLayout"
-        android:layout_marginTop="55dp"
-        android:layout_below="@+id/section_label"
-        android:layout_alignParentStart="true" />
+        android:text="write your task"
+
+        android:layout_below="@+id/editdate"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="94dp" />
 
 </RelativeLayout>

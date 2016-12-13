@@ -5,6 +5,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
+
         applicationId "com.example.bavly.todolistnew"
         minSdkVersion 21
         targetSdkVersion 24
@@ -15,6 +16,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
         }
     }
 }
@@ -23,11 +25,12 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
 
-    compile 'com.android.support:appcompat-v7:24.0.0'
-    compile 'com.android.support:recyclerview-v7:24.0.0+'
+    compile 'com.android.support:appcompat-v7:24.0'
+    compile 'com.android.support:recyclerview-v7:24.0+'
     compile 'com.google.firebase:firebase-auth:9.0.0'
     compile 'com.google.firebase:firebase-database:9.0.0'
     compile 'com.android.support:design:24.0.0'
+
 }
 apply plugin: 'com.google.gms.google-services'
 
