@@ -10,8 +10,8 @@ public class userinfo {
     String Task;
 
     public userinfo(String title, String DATE, String task) {
-        Title = title;
+       this. Title = title;
         this.DATE = DATE;
-        Task = task;
+       this. Task = task;
     }
 }

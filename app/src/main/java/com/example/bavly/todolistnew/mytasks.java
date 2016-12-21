@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -20,8 +21,10 @@ public class mytasks extends Fragment implements View.OnClickListener {
 View view;
     public Button Add ;
     public EditText tasks ,date,title;
-    DatabaseReference databaseReference;
-    FirebaseAuth firebaseAuth;
+   private DatabaseReference databaseReference;
+   private FirebaseAuth firebaseAuth;
+    int i =0;
+
 
 
     @Override
@@ -33,9 +36,10 @@ View view;
         date = (EditText) rootView.findViewById(R.id.editdate);
         title = (EditText) rootView.findViewById(R.id.edittitle) ;
         firebaseAuth = FirebaseAuth.getInstance();
-     /*   if (firebaseAuth.getCurrentUser() == null){
-        }*/
+
+
         databaseReference = FirebaseDatabase .getInstance().getReference();
+        FirebaseUser user = firebaseAuth.getCurrentUser();
         Add.setOnClickListener(this);
 
 
@@ -43,14 +47,15 @@ View view;
 
     }
 
-    public  void  getuserinfo(){
+    private  void  getuserinfo(){
 
         String  Date = date.getText().toString().trim();
         String  Title = title.getText().toString().trim();
         String  Tasks = tasks.getText().toString().trim();
         userinfo info = new userinfo(Date,Title,Tasks);
         FirebaseUser user = firebaseAuth.getCurrentUser();
-        databaseReference.child(user.getUid()).setValue(info);
+        databaseReference.child(user.getUid()).child("task"+i++).setValue(info);
+        Toast.makeText(getContext(), "yor task is saved", Toast.LENGTH_SHORT).show();
 
     }
 
